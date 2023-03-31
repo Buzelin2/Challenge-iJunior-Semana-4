@@ -15,7 +15,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
 .main { /*Container principal com tudo*/
   margin-top: 8vh;
   height: 85vh;
-  width: 35vw;
+  width: 30vw;
   margin-left: 32vw;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
 .generate{
   margin-top: 47vh;
   height: 9vh;
-  width: 31vw;
+  width: 26vw;
   margin-left: 2vw;
   align-items: center;
   background-color: rgb(164,255,175);
@@ -66,7 +66,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
 }
 .length_count{
   margin-top: 27vh;
-  margin-left: 20vw;
+  margin-left: 16vw;
   background-color: rgba(0, 0, 0, 0);
   color: rgb(164,255,175);
   font-size: 4vh;
@@ -74,7 +74,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
 .rolagem{
   position: absolute;
   height: 1vh;
-  width: 31.4vw;
+  width: 26.4vw;
   margin-left: 1.5vw;
   margin-top: 36vh;
 }
