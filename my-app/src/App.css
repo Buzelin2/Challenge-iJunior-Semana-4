@@ -1,12 +1,19 @@
+/*
+Cor background: rgb(13,12,18);
+Background main: rgb(36,35,43);
+Botao: rgb(164,255,175);
+Cor da fonte: rgb(203,201,210);
+Cor da div do strenght e da div de rolagem: rgb(24,23,31)
+ */
+
 *{
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(13,12,18);
   border: 0px;
   padding: 0px;
 }
 
 .main { /*Container principal com tudo*/
   margin-top: 8vh;
-  border: 1px white solid;
   height: 85vh;
   width: 35vw;
   margin-left: 32vw;
@@ -21,16 +28,14 @@
 }
 .pass_gen{
   width: 100%;
-  border: 1px white solid;
   height: 10vh;
-  background-color: rgb(39, 40, 41);
+  background-color: rgb(36,35,43);
 }
 .main2{
   height: 60vh;
   width: 100%;
-  border: 1px solid white;
   margin-top: 5vh;
-  background-color: rgb(39, 40, 41);
+  background-color: rgb(36,35,43);;
 }
 .generate{
   margin-top: 47vh;
@@ -38,6 +43,45 @@
   width: 31vw;
   margin-left: 2vw;
   align-items: center;
-  background-color: rgb(139, 254, 166);
+  background-color: rgb(164,255,175);
   font-size: 2.2vh;
+}
+.password{
+  background-color: rgb(36,35,43);
+  color: rgb(64,64,71);
+  font-size: 2vw;
+  margin-top: 2vh;
+  margin-left: 1.6vw;
+}
+.tamanho{
+  position: absolute;
+  background-color: rgba(245, 245, 220, 0);
+  display: flex;
+}
+.length{
+  margin-top: 29vh;
+  margin-left: 1.6vw;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(203,201,210);
+}
+.length_count{
+  margin-top: 27vh;
+  margin-left: 20vw;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(164,255,175);
+  font-size: 4vh;
+}
+.rolagem{
+  position: absolute;
+  height: 1vh;
+  width: 31.4vw;
+  margin-left: 1.5vw;
+  margin-top: 36vh;
+}
+.botao_rolagem{
+  width: 1.7vw;
+  height: 1.7vw;
+  border-radius: 50%;
+  margin-top: -1.1vh;
+  background-color: rgb(203,201,210);
 }
