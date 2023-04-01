@@ -33,7 +33,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   background-color: rgb(36,35,43);;
 }
 .generate{
-  margin-top: 47vh;
+  margin-top: 54vh;
   height: 9vh;
   width: 26vw;
   margin-left: 2vw;
@@ -45,7 +45,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   background-color: rgb(36,35,43);
   color: rgb(64,64,71);
   font-size: 2vw;
-  margin-top: 2vh;
+  margin-top: 10vh;
   margin-left: 1.6vw;
 }
 .tamanho{
@@ -73,6 +73,14 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   margin-left: 1.5vw;
   margin-top: 36vh;
 }
+.button{
+  width: 1.4vw;
+  height: 1.4vw;
+  border-radius: 50%;
+  margin-top: -0.5vw;
+  background-color: rgb(203, 201, 210);
+  cursor: pointer;
+}
 .botao_rolagem{
   width: 1.7vw;
   height: 1.7vw;
@@ -81,33 +89,56 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   background-color: rgb(203,201,210);
 }
 .option1{
+  margin-left: 1.2vw;
   background-color: rgb(36, 35, 43);
+  color: rgb(203,201,210);
+  margin-top: 3vh;
 }
 .choices{
+  margin-left: 0.4vw;
   position: absolute;
   background-color: rgb(36, 35, 43);
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 .strength{
+  margin-top: 40vh;
   position: absolute;
-  background-color: rgb(0,0,0,0);
+  background-color: rgb(13,12,18);
+  width: 26.8vw;
+  margin-left: 1.6vw;
+  height: 4vw;
+  display: flex;
 }
-.strengthdentro{
+.strengthDentro{
   position: absolute;
+  color: rgb(103, 101, 101);
+  margin-left: 2vw;
+  margin-top: 2.5vh;
+  font-size: 2vh;
   background-color: rgb(0,0,0,0);
 }
 .difficulty{
-  position: absolute;
-  background-color: rgb(0,0,0,0);
-}
-.medidor{
-  position: absolute;
-  background-color: rgb(0,0,0,0);
+  background-color: rgb(13,12,18);
+  margin-left: 14vw;
+  color: rgb(103, 101, 101);
+  font-size: 2vh;
+  margin-top: 2.5vh;
 }
 .medidorpai{
-  position: absolute;
-  background-color: rgb(0,0,0,0);
+  position: relative;
+  display: flex;
+  padding: 1vw;
+  width: 5vw;
+
 }
+.medidor{
+  position: relative;
+  height: 1.8vw;
+  background-color: rgb(0,0,0,0);
+  width: 0.6vw;
+  border: 1px solid white;
+}
+
 
 
 
