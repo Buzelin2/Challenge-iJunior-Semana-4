@@ -7,73 +7,85 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
  */
 
 /* desing responsivo */
-.main { /*Container principal com tudo*/
+.main {
+  /*Container principal com tudo*/
   margin-top: 8vh;
   height: 85vh;
   width: 30vw;
   margin-left: 32vw;
   display: flex;
   flex-direction: column;
-  
+
 }
-.top_text{
+
+.top_text {
   text-align: center;
   color: rgb(103, 101, 101);
   font-size: 1.4vw;
 }
-.pass_gen{
+
+.pass_gen {
   width: 100%;
   height: 10vh;
-  background-color: rgb(36,35,43);
+  background-color: rgb(36, 35, 43);
 }
-.main2{
+
+.main2 {
   height: 60vh;
   width: 100%;
   margin-top: 5vh;
-  background-color: rgb(36,35,43);;
+  background-color: rgb(36, 35, 43);
+  ;
 }
-.generate{
+
+.generate {
   margin-top: 54vh;
   height: 9vh;
   width: 26vw;
   margin-left: 2vw;
   align-items: center;
-  background-color: rgb(164,255,175);
+  background-color: rgb(164, 255, 175);
   font-size: 2.2vh;
 }
-.password{
-  background-color: rgb(36,35,43);
-  color: rgb(64,64,71);
+
+.password {
+  background-color: rgb(36, 35, 43);
+  color: rgb(64, 64, 71);
   font-size: 2vw;
   margin-top: 10vh;
   margin-left: 1.6vw;
 }
-.tamanho{
+
+.tamanho {
   position: absolute;
   background-color: rgba(245, 245, 220, 0);
   display: flex;
 }
-.length{
+
+.length {
   margin-top: 29vh;
   margin-left: 1.6vw;
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(203,201,210);
+  color: rgb(203, 201, 210);
 }
-.length_count{
+
+.length_count {
   margin-top: 27vh;
   margin-left: 16vw;
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(164,255,175);
+  color: rgb(164, 255, 175);
   font-size: 4vh;
 }
-.rolagem{
+
+.rolagem {
   position: absolute;
   height: 1vh;
   width: 26.4vw;
   margin-left: 1.5vw;
   margin-top: 36vh;
 }
-.button{
+
+.button {
   width: 1.4vw;
   height: 1.4vw;
   border-radius: 50%;
@@ -81,60 +93,68 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   background-color: rgb(203, 201, 210);
   cursor: pointer;
 }
-.botao_rolagem{
+
+.botao_rolagem {
   width: 1.7vw;
   height: 1.7vw;
   border-radius: 50%;
   margin-top: -1.1vh;
-  background-color: rgb(203,201,210);
+  background-color: rgb(203, 201, 210);
 }
-.option1{
+
+.option1 {
   margin-left: 1.2vw;
   background-color: rgb(36, 35, 43);
-  color: rgb(203,201,210);
+  color: rgb(203, 201, 210);
   margin-top: 3vh;
 }
-.choices{
+
+.choices {
   margin-left: 0.4vw;
   position: absolute;
   background-color: rgb(36, 35, 43);
   margin-top: 15vh;
 }
-.strength{
+
+.strength {
   margin-top: 40vh;
   position: absolute;
-  background-color: rgb(13,12,18);
+  background-color: rgb(13, 12, 18);
   width: 26.8vw;
   margin-left: 1.6vw;
   height: 4vw;
   display: flex;
 }
-.strengthDentro{
+
+.strengthDentro {
   position: absolute;
   color: rgb(103, 101, 101);
   margin-left: 2vw;
   margin-top: 2.5vh;
   font-size: 2vh;
-  background-color: rgb(0,0,0,0);
+  background-color: rgb(0, 0, 0, 0);
 }
-.difficulty{
-  background-color: rgb(13,12,18);
+
+.difficulty {
+  background-color: rgb(13, 12, 18);
   margin-left: 14vw;
   color: rgb(103, 101, 101);
   font-size: 2vh;
   margin-top: 2.5vh;
 }
-.medidorpai{
+
+.medidorpai {
   position: relative;
   display: flex;
   padding: 1vw;
   width: 5vw;
 
 }
-.medidor{
+
+.medidor {
   position: relative;
   height: 1.8vw;
-  background-color: rgb(0,0,0,0);
+  background-color: rgb(0, 0, 0, 0);
   width: 0.6vw;
   border: 1px solid white;
 }
@@ -184,6 +204,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
     background-color: rgb(164, 255, 175);
     font-size: 3vh;
     letter-spacing: 1vh;
+    margin-top: 56vh;
   }
 
   .password {
@@ -197,9 +218,9 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   .tamanho {
     background-color: rgba(245, 245, 220, 0);
     display: flex;
-    width: 100vw; 
+    width: 100vw;
     height: 10vh;
-    margin-top: 20vh;
+    margin-top: 1vh;
   }
 
   .length {
@@ -213,7 +234,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
 
   .length_count {
     margin-top: 22vh;
-    margin-left: 25vw;
+    margin-left: 22vw;
     background-color: rgba(0, 0, 0, 0);
     color: rgb(164, 255, 175);
     font-size: 4vh;
@@ -221,10 +242,11 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
 
   .rolagem {
     height: 1.5vh;
-    width: 90%;
+    width: 86%;
     margin-left: 1.5vw;
     margin-top: 31vh;
-  }
+    z-index: 2;
+}
 
   .button {
     width: 7vw;
@@ -234,18 +256,17 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
     background-color: rgb(203, 201, 210);
   }
 
-  .choices{  
+  .choices {
     /* Container com as escolhas das tipagens que podem ser incluidas na formação da senha*/
-    
-    margin-top: 22vw;
+    margin-top: 18vw;
     background-color: rgb(36, 35, 43)
   }
 
   .option1 {
     margin-left: 3vw;
     margin-top: 10vw;
-    color:rgb(203, 201, 210);
-    background-color: rgb(0,0,0,0);
+    color: rgb(203, 201, 210);
+    background-color: rgb(0, 0, 0, 0);
     font-size: 5vw;
     display: inline-block;
   }
@@ -254,37 +275,39 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
     transform: scale(2);
   }
 
-  .strength{
+  .strength {
     /* Container que contem a barra de dificuldade */
-    display:flex;
-    margin:4vw;
+    display: flex;
+    margin-top: 97vw;
     height: 15vw;
     padding: 1vw;
+    width: 85%;
   }
 
-  .strength .strengthDentro{
+  .strength .strengthDentro {
     position: relative;
-    color:rgb(103, 101, 101);
-    margin-right: 18vw;
-    margin-left: 2vw;
-    padding-top: 1vw;
+    color: rgb(103, 101, 101);
+    margin-left: -.5vw;
+    margin-top: 3.8vw;
   }
-  
-  .strength .difficulty{
+
+  .strength .difficulty {
     position: relative;
-    color:rgb(203, 201, 210);
+    color: rgb(203, 201, 210);
     padding: 1vw 0 1vw;
+    margin-top: 3.8vw;
   }
 
-  .medidorpai{
+  .medidorpai {
     position: relative;
     display: flex;
     padding: 1vw;
+    width: 18vw;
   }
 
-  .medidor{
+  .medidor {
     position: relative;
-    margin: 2vw 1vw;
+    margin: 1vw 1vw;
     height: 10vw;
     width: 2vw;
     border: 1px solid white;
@@ -298,8 +321,8 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   background-color: rgb(13, 12, 18);
   border: 0px;
   padding: 0px;
-  /* border: 1px solid red; */
-}
+  /* border: 1px solid red;*/
+} 
 
 .main {
   /*Container principal com tudo*/
@@ -378,7 +401,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   /* margin-top: 36vh; */
 }
 
-.button { 
+.button {
   /* width: 1.7vw;
   height: 1.7vw; */
   border-radius: 50%;
