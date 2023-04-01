@@ -96,7 +96,8 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
     background-color: rgb(203, 201, 210);
   }
 
-  .choices{
+  .choices{  
+    /* Container com as escolhas das tipagens que podem ser incluidas na formação da senha*/
     margin-top: 22vw;
     background-color: rgb(36, 35, 43)
   }
@@ -114,6 +115,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   }
 
   .strength{
+    /* Container que contem a barra de dificuldade */
     display:flex;
     margin:4vw;
     height: 15vw;
@@ -146,7 +148,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
 
 }
 
-/* tudo comentado influencia no design responsivo */
+/* tudo comentado no código influencia no design responsivo, ou seja, ao descomentar, o design responsivo irá mudar! */
 
 * {
   background-color: rgb(13, 12, 18);
