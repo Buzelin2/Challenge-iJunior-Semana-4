@@ -6,82 +6,246 @@ Cor da fonte: rgb(203,201,210);
 Cor da div do strenght e da div de rolagem: rgb(24,23,31)
  */
 
-*{
-  background-color: rgb(13,12,18);
-  border: 0px;
-  padding: 0px;
+/* desing responsivo */
+@media screen and (min-width:375px) and (max-width:768px) {
+
+  .main {
+    /*Container principal com tudo*/
+    margin-top: 2vh;
+    height: 85vh;
+    /* width: 30vw; */
+    /* margin-left: 32vw; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top_text {
+    text-align: center;
+    color: rgb(103, 101, 101);
+    font-size: 6.5vw;
+  }
+
+  .pass_gen {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(36, 35, 43);
+  }
+
+  .main2 {
+    height: 70vh;
+    width: 100%;
+    margin-top: 2vh;
+    background-color: rgb(36, 35, 43);
+  }
+
+  .generate {
+    height: 9vh;
+    margin-left: 2vw;
+    width: 95%;
+    align-items: center;
+    background-color: rgb(164, 255, 175);
+    font-size: 3vh;
+    letter-spacing: 1vh;
+  }
+
+  .password {
+    background-color: rgb(36, 35, 43);
+    color: rgb(64, 64, 71);
+    font-size: 7.5vw;
+    margin-top: 2vh;
+    margin-left: 1.6vw;
+  }
+
+  .tamanho {
+    position: absolute;
+    background-color: rgba(245, 245, 220, 0);
+    display: flex;
+    height: 10vw;
+    width: 100%;
+  }
+
+  .length {
+    margin-top: 23vh;
+    margin-left: 1.6vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(203, 201, 210);
+    font-size: 6vw;
+  }
+
+  .length_count {
+    margin-top: 22vh;
+    margin-left: 25vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(164, 255, 175);
+    font-size: 4vh;
+  }
+
+  .rolagem {
+    position: absolute;
+    height: 1.5vh;
+    width: 90%;
+    margin-left: 1.5vw;
+    margin-top: 31vh;
+  }
+
+  .button {
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    margin-top: -1.5vw;
+    background-color: rgb(203, 201, 210);
+  }
+
+  .choices{
+    margin-top: 22vw;
+    background-color: rgb(36, 35, 43)
+  }
+
+  .option1 {
+    margin-left: 3vw;
+    margin-top: 10vw;
+    color:rgb(203, 201, 210);
+    font-size: 5vw;
+    display: inline-block;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(2);
+  }
+
+  .strength{
+    display:flex;
+    margin:4vw;
+    height: 15vw;
+    padding: 1vw;
+  }
+
+  .strength .strengthDentro{
+    color:rgb(103, 101, 101);
+    margin-right: 18vw;
+    margin-left: 2vw;
+    padding-top: 1vw;
+  }
+  
+  .strength .difficulty{
+    color:rgb(203, 201, 210);
+    padding: 1vw 0 1vw;
+  }
+
+  .medidorpai{
+    display: flex;
+    padding: 1vw;
+  }
+
+  .medidor{
+    margin: 2vw 1vw;
+    height: 10vw;
+    width: 2vw;
+    border: 1px solid white;
+  }
+
 }
 
-.main { /*Container principal com tudo*/
-  margin-top: 8vh;
-  height: 85vh;
-  width: 30vw;
-  margin-left: 32vw;
+/* tudo comentado influencia no design responsivo */
+
+* {
+  background-color: rgb(13, 12, 18);
+  border: 0px;
+  padding: 0px;
+  /* border: 1px solid red; */
+}
+
+.main {
+  /*Container principal com tudo*/
+  /* margin-top: 8vh; */
+  height: 95vh;
+  /* width: 30vw; */
+  /* margin-left: 32vw; */
   display: flex;
   flex-direction: column;
-  
 }
-.top_text{
+
+.top_text {
   text-align: center;
   color: rgb(103, 101, 101);
-  font-size: 1.4vw;
+  /* font-size: 1.4vw; */
 }
-.pass_gen{
+
+.pass_gen {
   width: 100%;
   height: 10vh;
-  background-color: rgb(36,35,43);
+  background-color: rgb(36, 35, 43);
 }
-.main2{
-  height: 60vh;
+
+.main2 {
+  height: 67vh;
   width: 100%;
-  margin-top: 5vh;
-  background-color: rgb(36,35,43);;
+  /* margin-top: 5vh; */
+  background-color: rgb(36, 35, 43);
 }
-.generate{
-  margin-top: 47vh;
+
+.generate {
+  /* margin-top: 47vh; */
   height: 9vh;
-  width: 26vw;
-  margin-left: 2vw;
+  /* width: 26vw; */
+  /* margin-left: 2vw; */
   align-items: center;
-  background-color: rgb(164,255,175);
-  font-size: 2.2vh;
+  background-color: rgb(164, 255, 175);
+  /* font-size: 2.2vh; */
+  cursor: pointer;
 }
-.password{
-  background-color: rgb(36,35,43);
-  color: rgb(64,64,71);
-  font-size: 2vw;
+
+.password {
+  background-color: rgb(36, 35, 43);
+  color: rgb(64, 64, 71);
+  /* font-size: 2vw; */
   margin-top: 2vh;
   margin-left: 1.6vw;
 }
-.tamanho{
+
+.tamanho {
   position: absolute;
   background-color: rgba(245, 245, 220, 0);
   display: flex;
 }
-.length{
-  margin-top: 29vh;
+
+.length {
+  /* margin-top: 29vh; */
   margin-left: 1.6vw;
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(203,201,210);
+  color: rgb(203, 201, 210);
 }
-.length_count{
-  margin-top: 27vh;
-  margin-left: 16vw;
+
+.length_count {
+  /* margin-top: 27vh; */
+  /* margin-left: 16vw; */
   background-color: rgba(0, 0, 0, 0);
-  color: rgb(164,255,175);
-  font-size: 4vh;
+  color: rgb(164, 255, 175);
+  /* font-size: 4vh; */
 }
-.rolagem{
+
+.rolagem {
   position: absolute;
-  height: 1vh;
-  width: 26.4vw;
+  /* height: 1vh;
+  width: 26.4vw; */
   margin-left: 1.5vw;
-  margin-top: 36vh;
+  /* margin-top: 36vh; */
 }
-.botao_rolagem{
-  width: 1.7vw;
-  height: 1.7vw;
+
+.button { 
+  /* width: 1.7vw;
+  height: 1.7vw; */
   border-radius: 50%;
-  margin-top: -1.1vh;
-  background-color: rgb(203,201,210);
+  /* margin-top: -1.1vh; */
+  background-color: rgb(203, 201, 210);
+}
+
+.option1 {
+  /* position: absolute; */
+  /* margin-left: 1.5vw; */
+  /* margin-top: 36vh; */
+}
+
+input[type="checkbox"] {
+  transform: scale(2);
 }
