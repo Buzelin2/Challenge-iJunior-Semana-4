@@ -85,14 +85,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   margin-top: 36vh;
 }
 
-.button {
-  width: 1.4vw;
-  height: 1.4vw;
-  border-radius: 50%;
-  margin-top: -0.5vw;
-  background-color: rgb(203, 201, 210);
-  cursor: pointer;
-}
+
 
 .option1 {
   margin-left: 1.2vw;
@@ -136,20 +129,112 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
 }
 
 .medidorpai {
-  position: relative;
+  position: absolute;
   display: flex;
   padding: 1vw;
   width: 10vw;
-
+  background-color: rgb(0,0,0,0);
 }
 
 .medidor {
-  position: relative;
+  position: absolute;
   height: 1.8vw;
   background-color: rgb(0, 0, 0, 0);
   width: 0.6vw;
   border: 1px solid white;
   margin-right: .6vw;
+  margin-left: 20.4vw;
+}
+input{
+  border-radius: 0%;
+}
+input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 1.4vw;
+  width: 1.4vw;
+  background-color: rgb(203, 201, 210);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 2vh;
+}
+.button{
+  -webkit-appearance: none;
+  width: 100%;
+  background-color: rgb(0,0,0,0);
+  margin-top: -0.8vh;
+  margin-left: -0.1vw;
+}
+.medidor1 {
+  position: absolute;
+  height: 1.8vw;
+  background-color: red;
+  width: 0.6vw;
+  border: 1px solid white;
+  margin-right: .6vw;
+  margin-left: 20.4vw;
+}
+.medidor2 {
+  position: absolute;
+  height: 1.8vw;
+  background-color: red;
+  width: 0.6vw;
+  border: 1px solid white;
+  margin-right: .6vw;
+  margin-left: 21.6vw;
+}
+.medidor3 {
+  position: absolute;
+  height: 1.8vw;
+  background-color: red;
+  width: 0.6vw;
+  border: 1px solid white;
+  margin-right: .6vw;
+  margin-left: 22.8vw;
+}
+.medidor4 {
+  position: absolute;
+  height: 1.8vw;
+  background-color: red;
+  width: 0.6vw;
+  border: 1px solid white;
+  margin-right: .6vw;
+  margin-left: 24vw;
+}
+.medidor11 {
+  position: absolute;
+  height: 1.8vw;
+  background-color: rgb(0,0,0,0);
+  width: 0.6vw;
+  border: 1px solid white;
+  margin-right: .6vw;
+  margin-left: 20.4vw;
+}
+.medidor22 {
+  position: absolute;
+  height: 1.8vw;
+  background-color: rgb(0,0,0,0);
+  width: 0.6vw;
+  border: 1px solid white;
+  margin-right: .6vw;
+  margin-left: 21.6vw;
+}
+.medidor33 {
+  position: absolute;
+  height: 1.8vw;
+  background-color: rgb(0,0,0,0);
+  width: 0.6vw;
+  border: 1px solid white;
+  margin-right: .6vw;
+  margin-left: 22.8vw;
+}
+.medidor44 {
+  position: absolute;
+  height: 1.8vw;
+  background-color: rgb(0,0,0,0);
+  width: 0.6vw;
+  border: 1px solid white;
+  margin-right: .6vw;
+  margin-left: 24vw;
 }
 
 
@@ -241,13 +326,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
     z-index: 2;
 }
 
-  .button {
-    width: 7vw;
-    height: 7vw;
-    border-radius: 50%;
-    margin-top: -1.5vw;
-    background-color: rgb(203, 201, 210);
-  }
+  
 
   .choices {
     /* Container com as escolhas das tipagens que podem ser incluidas na formação da senha*/
@@ -394,13 +473,7 @@ Cor da div do strenght e da div de rolagem: rgb(24,23,31)
   /* margin-top: 36vh; */
 }
 
-.button {
-  /* width: 1.7vw;
-  height: 1.7vw; */
-  border-radius: 50%;
-  /* margin-top: -1.1vh; */
-  background-color: rgb(203, 201, 210);
-}
+
 
 .option1 {
   /* position: absolute; */

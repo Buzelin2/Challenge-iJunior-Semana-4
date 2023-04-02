@@ -1,8 +1,32 @@
 import './App.css'
+import { useState } from 'react'
 
 function App() {
+  var dificuldade = 'DIFICULDADE';
+  var alo = 0;
+  const [value, setValue] = useState(0);
 
 
+//Codigo abaixo feito para medir o nivel de dificuldade da senha
+  if(value > 0){
+    var dificuldade = 'MUITO FACIL';
+  }
+  if(value > 5){
+    alo++;
+    var dificuldade = 'FACIL';
+  }
+  if(value > 10){
+    alo++;
+    var dificuldade = 'MEDIO';
+  }
+  if(value > 15){
+    alo++;
+    var dificuldade = 'DIFICIL';
+  }
+  if(value >= 20){
+    alo++;
+    var dificuldade = 'IMPOSSIVEL';
+  }
   return (
     <div className="App">
 
@@ -14,11 +38,11 @@ function App() {
 
         <div className='tamanho'>
           <p className='length'>Character length</p>
-          <p className='length_count'>0</p>
+          <p className='length_count'>{value}</p>
         </div>
 
         <div className='rolagem'>
-          <div class="button"></div>   {/*mudei de button para div} */}
+          <input type='range' max = {20} value={value} class="button" onChange={(e) => setValue(e.target.valueAsNumber)}></input>   {/*mudei de button para div} */}
         </div>
 
         <div className="main2"> {/*Todo o resto do main*/}
@@ -42,12 +66,12 @@ function App() {
 
           <div class="strength">    {/*Div que mostra a dificuldade da senha*/}
             <p class="strengthDentro">STRENGTH</p>
-            <p class="difficulty">DIFICULDADE</p> {/* dificuldade está aqui como exemplo, pois terá que ser algo dinamico*/}
+            <p class="difficulty">{dificuldade}</p> {/* dificuldade está aqui como exemplo, pois terá que ser algo dinamico*/}
             <div class="medidorpai">
-              <div class="medidor"></div>
-              <div class="medidor"></div>
-              <div class="medidor"></div>
-              <div class="medidor"></div>
+              <div class={alo >= 1 ? 'medidor1' : 'medidor11'}></div>
+              <div class={alo >= 2 ? 'medidor2' : 'medidor22'}></div>
+              <div class={alo >= 3 ? 'medidor3' : 'medidor33'}></div>
+              <div class={alo >= 4 ? 'medidor4' : 'medidor44'}></div>
             </div>
           </div>
 
