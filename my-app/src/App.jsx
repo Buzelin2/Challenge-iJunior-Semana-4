@@ -9,6 +9,7 @@ let sim = "";
 let gerado;
 var valor;
 
+
 function geradora(){
 gerado = '';
 gerado = palavra1 + palavra2 + num + sim;
@@ -43,6 +44,7 @@ if( document.querySelector("#checkM").checked){
      for (let i = 0; i < 21; i++) {
      palavra1 += letras.charAt(Math.floor(Math.random() * letras.length));
   } 
+
 }
 }
 {/*esta função gera letras maiuscula aleatorias */}
@@ -53,7 +55,7 @@ if( document.querySelector("#checkm").checked){
    for (let i = 0; i < 21; i++) {
    palavra2 += letras.charAt(Math.floor(Math.random() * letras.length));
 }
-  
+
 }
 } 
  {/*esta função gera letras minuscula aleatorias */}
@@ -64,6 +66,7 @@ if( document.querySelector("#checkn").checked){
     for (let i = 0; i < 21; i++) {
    num += letras.charAt(Math.floor(Math.random() * letras.length));
   }
+
 }
 }  
 {/*esta função gera numeros aleatorias */}
@@ -82,28 +85,47 @@ if( document.querySelector("#checks").checked){
 
 
 function App() {
+var aloalo = 8;
+  const [letm, setLetm] = useState(0);
+  const handleLetm = () => setLetm(!letm);
+  const [letM, setLetM] = useState(0);
+  const handleLetM = () => setLetM(!letM);
+  const [numero, setNumero] = useState(0);
+  const handleNumero = () => setNumero(!numero);
+  const [sim, setSim] = useState(0);
+  const handleSim = () => setSim(!sim);
+  
+  if(letm) aloalo += 2;
+  if(letM) aloalo += 2;
+  if(numero) aloalo += 2;
+  if(sim) aloalo += 2;
+  if(letM == false) aloalo -= 2;
+  if(letm == false) aloalo -= 2;
+  if(sim == false) aloalo -= 2;
+  if(numero == false) aloalo -= 2;
+
   var dificuldade = 'DIFICULDADE';
   var alo = 0;
   const [value, setValue] = useState(0);
 valor = value;
 
 //Codigo abaixo feito para medir o nivel de dificuldade da senha
-  if(valor > 0){
+  if(valor + aloalo > 0){
     var dificuldade = 'MUITO FACIL';
   }
-  if(valor > 5){
+  if(valor + aloalo > 7){
     alo++;
     var dificuldade = 'FACIL';
   }
-  if(valor > 10){
+  if(valor + aloalo> 14){
     alo++;
     var dificuldade = 'MEDIO';
   }
-  if(valor > 15){
+  if(valor + aloalo> 21){
     alo++;
     var dificuldade = 'DIFICIL';
   }
-  if(valor >= 20){
+  if(valor + aloalo>= 28){
     alo++;
     var dificuldade = 'IMPOSSIVEL';
   }
@@ -128,19 +150,19 @@ valor = value;
         <div className="main2"> {/*Todo o resto do main*/}
           <div class="choices">
             {/* Aqui estão os botões de opção de escolha */}
-            <input type="checkbox" onChange={letrasM} name="option1" class="option1"  id='checkM'></input>
+            <input type="checkbox" onChange={e =>{letrasM(); handleLetm()}} name="option1" class="option1" id='checkM'></input>
             <label for="option1" class="option1">Include Uppercase Letters</label>
             <br></br>
 
-            <input type="checkbox" onChange={letrasm} name="option1" class="option1"  id='checkm'></input>
+            <input type="checkbox" onChange={e =>{letrasm(); handleLetM()}} name="option1" class="option1"  id='checkm'></input>
             <label for="option1" class="option1">Include Lowercase Letters</label>
             <br></br>
 
-            <input type="checkbox" onChange={nume} name="option1" class="option1"  id='checkn'></input>
+            <input type="checkbox" onChange={e =>{nume(); handleNumero()}} name="option1" class="option1"  id='checkn'></input>
             <label for="option1" class="option1">Include Numbers</label>
             <br></br>
 
-            <input type="checkbox" onChange={simbo} name="option1" class="option1"  id='checks'></input>
+            <input type="checkbox" onChange={e =>{simbo(); handleSim()}} name="option1" class="option1"  id='checks'></input>
             <label for="option1" class="option1">Include Symbols</label>
           </div>
 
